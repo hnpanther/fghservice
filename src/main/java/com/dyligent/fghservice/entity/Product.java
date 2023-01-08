@@ -2,6 +2,8 @@ package com.dyligent.fghservice.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import java.util.Date;
 
@@ -30,10 +32,12 @@ public class Product {
     @Column(name = "content", columnDefinition = "text")
     private String content;
 
-    @Column(name = "created_at")
+    @Column(name = "created_at", nullable = false, updatable = false)
+    @CreationTimestamp
     private Date createdAt;
 
     @Column(name = "updated_at")
+    @UpdateTimestamp
     private Date updatedAt;
 
     @ManyToOne
