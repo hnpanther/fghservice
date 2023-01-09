@@ -41,4 +41,13 @@ public class CompanyInformation {
     private String icon2Img;
     @Column(name = "description", columnDefinition = "text")
     private String description;
+
+    @Column(name = "number_of_product")
+    private int numberOfProduct;
+
+    @Column(name = "number_of_customers")
+    private int numberOfCustomers;
+
+    @Column(name = "number_of_final+customers")
+    private int numberOfFinalCustomers;
 }
