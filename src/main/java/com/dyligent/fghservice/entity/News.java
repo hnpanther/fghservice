@@ -6,6 +6,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 @Entity
@@ -40,5 +41,8 @@ public class News {
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     private User author;
+
+    @OneToMany(mappedBy = "news")
+    private List<PhotoAlbum> photoAlbumList;
 
 }

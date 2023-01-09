@@ -6,6 +6,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 @Entity
@@ -43,4 +44,7 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     private User author;
+
+    @OneToMany(mappedBy = "product")
+    private List<PhotoAlbum> photoAlbumList;
 }

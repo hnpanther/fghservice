@@ -40,4 +40,12 @@ public class PhotoAlbum {
     @Column(name = "status")
     private int status;
 
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    private Product product;
+
+    @ManyToOne
+    @JoinColumn(name = "news_id")
+    private News news;
+
 }
