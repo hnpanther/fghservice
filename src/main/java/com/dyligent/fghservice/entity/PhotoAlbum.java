@@ -48,4 +48,8 @@ public class PhotoAlbum {
     @JoinColumn(name = "news_id")
     private News news;
 
+    @ManyToOne
+    @JoinColumn(name = "certificate_id")
+    private Certificate certificate;
+
 }
