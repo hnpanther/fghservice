@@ -18,4 +18,7 @@ public class Category {
 
     @Column(name = "base_image")
     private String baseImage;
+
+    @Column(name = "status")
+    private int status;
 }

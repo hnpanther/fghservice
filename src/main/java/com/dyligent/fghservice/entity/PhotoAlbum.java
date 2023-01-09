@@ -37,4 +37,7 @@ public class PhotoAlbum {
     @UpdateTimestamp
     private Date updatedAt;
 
+    @Column(name = "status")
+    private int status;
+
 }

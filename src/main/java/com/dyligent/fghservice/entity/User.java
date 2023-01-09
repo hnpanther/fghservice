@@ -47,4 +47,10 @@ public class User {
     @Column(name = "updated_at")
     @UpdateTimestamp
     private Date updatedAt;
+
+    @Column(name = "enabled")
+    private boolean enabled;
+
+    @Column(name = "status")
+    private int status;
 }
