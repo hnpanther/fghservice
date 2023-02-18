@@ -22,6 +22,9 @@ public class PhotoAlbum {
     @Column(name = "photo_album_name", nullable = false, unique = true)
     private String photoAlbumName;
 
+    @Column(name = "photo_album_name_eng", nullable = false, unique = true)
+    private String photoAlbumNameEng;
+
     @Column(name = "image_link")
     private String imageLink;
 

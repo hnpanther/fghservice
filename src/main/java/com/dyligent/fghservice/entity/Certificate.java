@@ -18,6 +18,9 @@ public class Certificate {
     @Column(name = "description")
     private String description;
 
+    @Column(name = "description_eng")
+    private String descriptionEng;
+
     @Column(name = "main_img")
     private String mainImg;
 

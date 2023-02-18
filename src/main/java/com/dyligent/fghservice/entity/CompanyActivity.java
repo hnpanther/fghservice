@@ -19,6 +19,9 @@ public class CompanyActivity {
     @Column(name = "activity")
     private String activity;
 
+    @Column(name = "activity_eng")
+    private String activityEng;
+
     @Column(name = "enabled")
     private boolean enabled;
 }

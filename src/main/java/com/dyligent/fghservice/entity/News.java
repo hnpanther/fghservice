@@ -21,8 +21,14 @@ public class News {
     @Column(name = "title", nullable = false)
     private String title;
 
+    @Column(name = "title_eng", nullable = false)
+    private String titleEng;
+
     @Column(name = "summary")
     private String summary;
+
+    @Column(name = "summary_eng")
+    private String summaryEng;
 
     @Column(name = "base_image")
     private String baseImage;

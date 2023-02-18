@@ -19,6 +19,9 @@ public class Goal {
     @Column(name = "goal")
     private String goal;
 
+    @Column(name = "goal_eng")
+    private String goalEng;
+
     @Column(name = "enabled")
     private boolean enabled;
 }

@@ -16,8 +16,14 @@ public class Question {
     @Column(name = "question_content", nullable = false, length = 2000)
     private String questionContent;
 
+    @Column(name = "question_content_eng", nullable = false, length = 2000)
+    private String questionContentEng;
+
     @Column(name = "answer", nullable = false, length = 2000)
     private String answer;
+
+    @Column(name = "answer_eng", nullable = false, length = 2000)
+    private String answerEng;
 
     @Column(name = "order_number")
     private int orderNumber;

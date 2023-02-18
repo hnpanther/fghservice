@@ -21,8 +21,8 @@ public class Product {
     @Column(name = "product_name", unique = true, nullable = false)
     private String productName;
 
-    @Column(name = "product_name_per", unique = true, nullable = false)
-    private String productNamePer;
+    @Column(name = "product_name_eng", unique = true)
+    private String productNameEng;
 
     @Column(name = "main_img")
     private String mainImg;
@@ -32,6 +32,9 @@ public class Product {
 
     @Column(name = "content", columnDefinition = "text")
     private String content;
+
+    @Column(name = "content_eng", columnDefinition = "text")
+    private String contentEng;
 
     @Column(name = "created_at", nullable = false, updatable = false)
     @CreationTimestamp
