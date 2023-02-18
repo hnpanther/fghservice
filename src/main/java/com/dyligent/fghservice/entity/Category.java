@@ -16,6 +16,9 @@ public class Category {
     @Column(name = "category_name", unique = true, nullable = false)
     private String categoryName;
 
+    @Column(name = "category_name_eng", unique = true)
+    private String categoryNameEng;
+
     @Column(name = "base_image")
     private String baseImage;
 
